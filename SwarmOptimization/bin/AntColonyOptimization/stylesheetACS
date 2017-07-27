@@ -1,0 +1,72 @@
+graph {
+	fill-color: white;
+}
+
+node {
+	size: 50px, 50px;
+	shape: circle;
+	fill-mode: dyn-plain;
+	fill-color: white;
+	stroke-mode: plain;
+	stroke-color: black;
+	stroke-width: 1px;
+	text-size: 20;
+}
+
+node.start {
+	shape: box;
+	stroke-color: red;
+	stroke-width: 3px;
+}
+
+node.objective {
+	shape: box;
+	stroke-color: blue;
+	stroke-width: 3px;
+}
+
+node.bestTour {
+	fill-mode: plain;
+	fill-color: lightGreen;
+}
+
+edge {
+	shape: angle;
+	arrow-shape: arrow;
+	size-mode: dyn-size;
+	fill-mode: dyn-plain;
+	fill-color: black, red;
+	stroke-mode: plain;
+	stroke-color: black;
+	stroke-width: 1px;
+	text-alignment: under;
+	text-size: 16;
+	text-color: black;
+}
+
+edge.bestTour {
+	fill-color : lightGreen;
+	size: 2px;
+}
+
+sprite.pheromone {
+	size: 10px, 10px;
+	shape: circle;
+	fill-mode: none;
+	stroke-mode: none;
+	text-size: 16;
+	text-alignment: above;
+	text-color: purple;
+}
+
+node.marked {
+	fill-color: green;
+}
+
+node:clicked {
+	fill-color: yellow;
+}
+
+node:selected {
+	fill-color: yellow;
+}

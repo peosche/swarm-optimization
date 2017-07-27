@@ -1,0 +1,21 @@
+graph {
+	fill-color: black;
+}
+
+node {
+	size: 25px, 25px;
+	shape: circle;
+	fill-mode: dyn-plain;
+	fill-color: pink, yellow, orange, red, violet;
+	stroke-mode: plain;
+	stroke-color: black;
+	stroke-width: 1px;
+}
+
+node.marked {
+	fill-color: green;
+}
+
+node:clicked{
+	fill-color: yellow;
+}
